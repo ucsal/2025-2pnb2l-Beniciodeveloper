@@ -1,8 +1,7 @@
 package br.com.mariojp.solid.lspaccounts;
 
 public class SavingsAccount extends Account {
-    @Override
-    public void withdraw(double amount) {
-        throw new UnsupportedOperationException("Saque não permitido em poupança");
-    }
+    // SavingsAccount não implementa Withdrawable
+    // Herda apenas deposit() e getBalance() de Account
+    // O método withdraw() da classe pai não é sobrescrito
 }
